@@ -1,0 +1,816 @@
+[
+  {
+    "Note: ": "§ The application is designed to transliterate the standard input language (Singlish/Thanglish) into the corresponding target language (Sinhala/Tamil) and may not correctly handle chat-style shorthand or informal abbreviations (e.g., “Thx”, “u”, “gr8”)\r\n   Therefore, you should not construct negative functional test cases using such short forms."
+  },
+  {
+    "Note: ": "§ Additionally, refer to the application’s Help page to identify the correct Singlish character combinations used to represent Sinhala letters when defining expected outputs."
+  },
+  {
+    "Note: ": "§ Your test cases must not include the ones mentioned below"
+  },
+  {
+    "Note: ": "TC ID",
+    "__EMPTY": "Test case name",
+    "__EMPTY_1": "Input length type",
+    "__EMPTY_2": "Input",
+    "__EMPTY_3": "Expected output",
+    "__EMPTY_4": "Actual output",
+    "__EMPTY_5": "Status",
+    "__EMPTY_6": "Accuracy justification/ Description of issue type",
+    "__EMPTY_7": "What is covered by the test"
+  },
+  {
+    "Note: ": "Pos_Fun_0001",
+    "__EMPTY": "Daily Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama haemadhaama bath kanavaa",
+    "__EMPTY_3": "මම හැමදාම බත් කනවා",
+    "__EMPTY_4": "මම හැමදාම බත් කනවා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Meaning is correctly preserved in Sinhala",
+    "__EMPTY_7": "· Daily Language usage"
+  },
+  {
+    "__EMPTY_6": "• Word order is correct",
+    "__EMPTY_7": "· simple sentence "
+  },
+  {
+    "__EMPTY_6": "• Sinhala spelling is accurate",
+    "__EMPTY_7": "· S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "· Accuracy validation "
+  },
+  {
+    "Note: ": "Pos_Fun_0002",
+    "__EMPTY": "Basic Question",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "Oyage nama mokakdha?",
+    "__EMPTY_3": "ඔයගෙ නම මොකක්ද?",
+    "__EMPTY_4": "ඔයගෙ නම මොකක්ද?",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• The sentence is correctly translated as a question",
+    "__EMPTY_7": "·   Greeting / request / response"
+  },
+  {
+    "__EMPTY_6": "• Intended meaning is preserved",
+    "__EMPTY_7": "·  Interrogative sentence"
+  },
+  {
+    "__EMPTY_6": "• Question format is correctly maintained",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0003",
+    "__EMPTY": "Simple Command Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "vaadi venna.",
+    "__EMPTY_3": "වාඩි වෙන්න.",
+    "__EMPTY_4": "වාඩි වෙන්න.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• The imperative command is correctly translated",
+    "__EMPTY_7": "·   Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Instruction meaning is preserved",
+    "__EMPTY_7": "·   Imperative sentence"
+  },
+  {
+    "__EMPTY_6": "• Sinhala wording is clear and correct",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0004",
+    "__EMPTY": "Future Tense Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "Mama labana sathiye Mahanuvara yanavaa.",
+    "__EMPTY_3": "මම ලබන සතියෙ මහනුවර යනවා.",
+    "__EMPTY_4": "මම ලබන සතියෙ මහනුවර යනවා.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Future tense meaning is preserved",
+    "__EMPTY_7": "·   Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Sinhala sentence structure is correct",
+    "__EMPTY_7": "·   Simple sentence"
+  },
+  {
+    "__EMPTY_6": "• Output is clear and readable",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0005",
+    "__EMPTY": "Past Tense Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "Mama iyee chithrapatayak baluvaa.",
+    "__EMPTY_3": "මම ඉයේ චිත්‍රපටයක් බලුවා.",
+    "__EMPTY_4": "මම ඉයේ චිත්‍රපටයක් බලුවා.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Past tense meaning is preserved",
+    "__EMPTY_7": "·   Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Sinhala grammar and structure are correct",
+    "__EMPTY_7": "·   Past tense"
+  },
+  {
+    "__EMPTY_6": "• Output matches the intended meaning",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0006",
+    "__EMPTY": "Compound Complex Sentence",
+    "__EMPTY_1": "M",
+    "__EMPTY_2": "iiyee udhee mama idhiriyee ena nivaadu uthsavaya saDHAhaa aluth eLavaLu saha palathuru miladhii gaeniimata koLaBA praDhaana veLaDHApoLata giya avasThaaveedhii, mata vasara dhahayakata vaedi kaalayakin dhaeka nothibuu magee paasal kaalayee paeraNi mithureku ahamben muNagaesuNaa.",
+    "__EMPTY_3": "ඊයේ උදේ මම ඉදිරියේ එන නිවාඩු උත්සවය සඳහා අලුත් එළවළු සහ පලතුරු මිලදී ගැනීමට කොළඹ ප්‍රධාන වෙළඳපොළට ගිය අවස්ථාවේදී, මට වසර දහයකට වැඩි කාලයකින් දැක නොතිබූ මගේ පාසල් කාලයේ පැරණි මිතුරෙකු අහම්බෙන් මුණගැසුණා.",
+    "__EMPTY_4": "ඊයේ උදේ මම ඉදිරියේ එන නිවාඩු උත්සවය සඳහා අලුත් එළවළු සහ පලතුරු මිලදී ගැනීමට කොළඹ ප්‍රධාන වෙළඳපොළට ගිය අවස්ථාවේදී, මට වසර දහයකට වැඩි කාලයකින් දැක නොතිබූ මගේ පාසල් කාලයේ පැරණි මිතුරෙකු අහම්බෙන් මුණගැසුණා.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Long and complex sentence is converted correctly",
+    "__EMPTY_7": "Formal language usage"
+  },
+  {
+    "__EMPTY_6": "• Meaning and structure are preserved",
+    "__EMPTY_7": "Complex sentence"
+  },
+  {
+    "__EMPTY_6": "• Punctuation and readability are maintained",
+    "__EMPTY_7": "M (31–299 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0007",
+    "__EMPTY": "Polite Instruction Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "karuNaakara layit nivanna.",
+    "__EMPTY_3": "කරුණාකර ලයිට් නිවන්න.",
+    "__EMPTY_4": "කරුණාකර ලයිට් නිවන්න.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Instruction meaning is preserved",
+    "__EMPTY_7": "· Greeting / request / response"
+  },
+  {
+    "__EMPTY_6": "• Polite form is correctly used",
+    "__EMPTY_7": "·   imperative sentence"
+  },
+  {
+    "__EMPTY_6": "• Sinhala output is grammatically correct",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0008",
+    "__EMPTY": "Compound Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama kadeeta gihin kiri gaththaa.",
+    "__EMPTY_3": "මම කඩේට ගිහින් කිරි ගත්තා.",
+    "__EMPTY_4": "මම කඩේට ගිහින් කිරි ගත්තා.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Compound sentence is converted correctly",
+    "__EMPTY_7": ". Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Sentence flow and meaning are preserved",
+    "__EMPTY_7": "·   Compound sentence"
+  },
+  {
+    "__EMPTY_6": "• Sinhala word usage is correct",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0009",
+    "__EMPTY": "Descriptive Narrative Sentence",
+    "__EMPTY_1": "M",
+    "__EMPTY_2": "adha udhaeesana nuvaraeLiya maDhYAma kaDHAukarayee Ghana thee vathu maedhin aevidha yana vita, muLu nimnaya puraa hamaa giya aDhika miidhuma saha siithala suLaGA maDhYAyee vuvadha, ithaa veegayen thee dhaLu neLana vehesa mahansi vii vaeda karana vathu kamkaruvan mama niriikShaNaya kaLemi.",
+    "__EMPTY_3": "අද උදෑසන නුවරඑළිය මධ්‍යම කඳුකරයේ ඝන තේ වතු මැදින් ඇවිද යන විට, මුළු නිම්නය පුරා හමා ගිය අධික මීදුම සහ සීතල සුළඟ මධ්‍යයේ වුවද, ඉතා වේගයෙන් තේ දළු නෙළන වෙහෙස මහන්සි වී වැඩ කරන වතු කම්කරුවන් මම නිරීක්ෂණය කළෙමි.",
+    "__EMPTY_4": "අද උදෑසන නුවරඑළිය මධ්‍යම කඳුකරයේ ඝන තේ වතු මැදින් ඇවිද යන විට, මුළු නිම්නය පුරා හමා ගිය අධික මීදුම සහ සීතල සුළඟ මධ්‍යයේ වුවද, ඉතා වේගයෙන් තේ දළු නෙළන වෙහෙස මහන්සි වී වැඩ කරන වතු කම්කරුවන් මම නිරීක්ෂණය කළෙමි.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Descriptive narrative meaning is preserved",
+    "__EMPTY_7": "Formal language usage"
+  },
+  {
+    "__EMPTY_6": "• Sinhala sentence flow remains natural",
+    "__EMPTY_7": "Complex sentence"
+  },
+  {
+    "__EMPTY_6": "• Output is clear and grammatically correct",
+    "__EMPTY_7": "M (31–299 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0010",
+    "__EMPTY": "Logical/Conditional Sentence",
+    "__EMPTY_1": "M",
+    "__EMPTY_2": "obata obagee dhigukaaliina vRUththiiya ilakka sapuraa gaeniimata saha mema tharaGAkaarii karmaanthayee saarThaka naayakayeku viimata avashYA nam, oba obee thaakShaNika kusalathaa varDhanaya kara gaeniimata menma oba samaGA dhinapathaa vaeda karana pudhgalayin samaGA shakthimath vRUththiiya sabaDHAthaa godanaGAaa gaeniimatadha avaDhaanaya yomu kaLa yuthuya.",
+    "__EMPTY_3": "ඔබට ඔබගේ දිගුකාලීන වෘත්තීය ඉලක්ක සපුරා ගැනීමට සහ මෙම තරඟකාරී කර්මාන්තයේ සාර්ථක නායකයෙකු වීමට අවශ්‍ය නම්, ඔබ ඔබේ තාක්ෂණික කුසලතා වර්ධනය කර ගැනීමට මෙන්ම ඔබ සමඟ දිනපතා වැඩ කරන පුද්ගලයින් සමඟ ශක්තිමත් වෘත්තීය සබඳතා ගොඩනඟා ගැනීමටද අවධානය යොමු කළ යුතුය.",
+    "__EMPTY_4": "ඔබට ඔබගේ දිගුකාලීන වෘත්තීය ඉලක්ක සපුරා ගැනීමට සහ මෙම තරඟකාරී කර්මාන්තයේ සාර්ථක නායකයෙකු වීමට අවශ්‍ය නම්, ඔබ ඔබේ තාක්ෂණික කුසලතා වර්ධනය කර ගැනීමට මෙන්ම ඔබ සමඟ දිනපතා වැඩ කරන පුද්ගලයින් සමඟ ශක්තිමත් වෘත්තීය සබඳතා ගොඩනඟා ගැනීමටද අවධානය යොමු කළ යුතුය.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Logical/conditional meaning is preserved",
+    "__EMPTY_7": "Formal language usage"
+  },
+  {
+    "__EMPTY_6": "• Sinhala output maintains correct structure",
+    "__EMPTY_7": "Complex sentence"
+  },
+  {
+    "__EMPTY_6": "• Sentence remains clear and readable",
+    "__EMPTY_7": "M (31–299 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0011",
+    "__EMPTY": "Negative Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama mas kannee naehae.",
+    "__EMPTY_3": "මම මස් කන්නේ නැහැ.",
+    "__EMPTY_4": "මම මස් කන්නේ නැහැ.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Negation is correctly handled",
+    "__EMPTY_7": "·   Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Sinhala output reflects the negative meaning",
+    "__EMPTY_7": "· Negation"
+  },
+  {
+    "__EMPTY_6": "• Grammar and wording are correct",
+    "__EMPTY_7": "·   S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0012",
+    "__EMPTY": "Legal-Administrative & Constitutional Prose Sentence",
+    "__EMPTY_1": "L",
+    "__EMPTY_2": "adhaaLa panathee viDhiviDhaana prakaarava amaathYAvarayaa vetha paevarii aethi balathalavalata anukuulava saha siyaluma paLaath puraa athYAvashYA seevaavan pavathvaagena yana atharathura mahajana aarakShaava thahavuru kiriimee avashYAthaavaya saelakillata ganimin, prakaashayata path karana ladha hadhisi avasThaa kaalasiimaava thuLa balayalath nilaDhaariyekugee raajakaariyata hithaamathaama baaDhaa karana, avahira karana hoo maedhihath vana, eseeth naethinam nikuth karana ladha niyooga piLipaedhiimata apohosath vana oonaeema pudhgalayeku ovungee samaaja thaththvaya hoo vRUththiiya anubadhDhathaavaya nosalakaa maheesthraathvarayeku idhiriyee pavathvanu labana sQQkShiptha nadu viBhaagayakata yatath viya yuthu athara, ehidhii varadhakaru karanu laebuu vita, vasara pahakata novaedi kaalayak saDHAhaa barapathala vaeda sahitha banDhanaagaaragatha kiriimakata hoo aDhikaraNa balaDhaariyaa visin thiiraNaya karanu labana saelakiya yuthu dhadayakata hoo ema dhaDAuvam dhekatama yatath viya haeki bava meyin niyama karanu labana athara, jaathika aarakShaava saha niithiyee aaDhipathYAya suraekiima saDHAhaa evaeni ayithivaasikam niithYaanukuulava siimaa kara aethi avasThaavakadhii haera, mema vaganthiyee adQQgu kisivak aaNdukrama vYAvasThaava magin sahathika kara aethi puravaesiyekugee muulika ayithivaasikam siimaa kiriimak lesa arTha niruupaNaya nokaLa yuthuya.",
+    "__EMPTY_3": "අදාළ පනතේ විධිවිධාන ප්‍රකාරව අමාත්‍යවරයා වෙත පැවරී ඇති බලතලවලට අනුකූලව සහ සියලුම පළාත් පුරා අත්‍යවශ්‍ය සේවාවන් පවත්වාගෙන යන අතරතුර මහජන ආරක්ෂාව තහවුරු කිරීමේ අවශ්‍යතාවය සැලකිල්ලට ගනිමින්, ප්‍රකාශයට පත් කරන ලද හදිසි අවස්ථා කාලසීමාව තුළ බලයලත් නිලධාරියෙකුගේ රාජකාරියට හිතාමතාම බාධා කරන, අවහිර කරන හෝ මැදිහත් වන, එසේත් නැතිනම් නිකුත් කරන ලද නියෝග පිළිපැදීමට අපොහොසත් වන ඕනෑම පුද්ගලයෙකු ඔවුන්ගේ සමාජ තත්ත්වය හෝ වෘත්තීය අනුබද්ධතාවය නොසලකා මහේස්ත්‍රාත්වරයෙකු ඉදිරියේ පවත්වනු ලබන සංක්ෂිප්ත නඩු විභාගයකට යටත් විය යුතු අතර, එහිදී වරදකරු කරනු ලැබූ විට, වසර පහකට නොවැඩි කාලයක් සඳහා බරපතල වැඩ සහිත බන්ධනාගාරගත කිරීමකට හෝ අධිකරණ බලධාරියා විසින් තීරණය කරනු ලබන සැලකිය යුතු දඩයකට හෝ එම දඬෞවම් දෙකටම යටත් විය හැකි බව මෙයින් නියම කරනු ලබන අතර, ජාතික ආරක්ෂාව සහ නීතියේ ආධිපත්‍යය සුරැකීම සඳහා එවැනි අයිතිවාසිකම් නීත්‍යානුකූලව සීමා කර ඇති අවස්ථාවකදී හැර, මෙම වගන්තියේ අඩංගු කිසිවක් ආණ්ඩුක්‍රම ව්‍යවස්ථාව මගින් සහතික කර ඇති පුරවැසියෙකුගේ මූලික අයිතිවාසිකම් සීමා කිරීමක් ලෙස අර්ථ නිරූපණය නොකළ යුතුය.",
+    "__EMPTY_4": "අදාළ පනතේ විධිවිධාන ප්‍රකාරව අමාත්‍යවරයා වෙත පැවරී ඇති බලතලවලට අනුකූලව සහ සියලුම පළාත් පුරා අත්‍යවශ්‍ය සේවාවන් පවත්වාගෙන යන අතරතුර මහජන ආරක්ෂාව තහවුරු කිරීමේ අවශ්‍යතාවය සැලකිල්ලට ගනිමින්, ප්‍රකාශයට පත් කරන ලද හදිසි අවස්ථා කාලසීමාව තුළ බලයලත් නිලධාරියෙකුගේ රාජකාරියට හිතාමතාම බාධා කරන, අවහිර කරන හෝ මැදිහත් වන, එසේත් නැතිනම් නිකුත් කරන ලද නියෝග පිළිපැදීමට අපොහොසත් වන ඕනෑම පුද්ගලයෙකු ඔවුන්ගේ සමාජ තත්ත්වය හෝ වෘත්තීය අනුබද්ධතාවය නොසලකා මහේස්ත්‍රාත්වරයෙකු ඉදිරියේ පවත්වනු ලබන සංක්ෂිප්ත නඩු විභාගයකට යටත් විය යුතු අතර, එහිදී වරදකරු කරනු ලැබූ විට, වසර පහකට නොවැඩි කාලයක් සඳහා බරපතල වැඩ සහිත බන්ධනාගාරගත කිරීමකට හෝ අධිකරණ බලධාරියා විසින් තීරණය කරනු ලබන සැලකිය යුතු දඩයකට හෝ එම දඬෞවම් දෙකටම යටත් විය හැකි බව මෙයින් නියම කරනු ලබන අතර, ජාතික ආරක්ෂාව සහ නීතියේ ආධිපත්‍යය සුරැකීම සඳහා එවැනි අයිතිවාසිකම් නීත්‍යානුකූලව සීමා කර ඇති අවස්ථාවකදී හැර, මෙම වගන්තියේ අඩංගු කිසිවක් ආණ්ඩුක්‍රම ව්‍යවස්ථාව මගින් සහතික කර ඇති පුරවැසියෙකුගේ මූලික අයිතිවාසිකම් සීමා කිරීමක් ලෙස අර්ථ නිරූපණය නොකළ යුතුය.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Long legal-style paragraph is converted correctly",
+    "__EMPTY_7": "Formal / legal language"
+  },
+  {
+    "__EMPTY_6": "• Meaning and overall structure are preserved",
+    "__EMPTY_7": "Complex sentence"
+  },
+  {
+    "__EMPTY_6": "• Output remains readable with correct punctuation",
+    "__EMPTY_7": "L (≥300 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0013",
+    "__EMPTY": "Future Negation Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama heta ennee naehae.",
+    "__EMPTY_3": "මම හෙට එන්නේ නැහැ.",
+    "__EMPTY_4": "මම හෙට එන්නේ නැහැ.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Future negative meaning is preserved",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Correct negation form is used in Sinhala",
+    "__EMPTY_7": "Future tense"
+  },
+  {
+    "__EMPTY_6": "• Output remains grammatically correct",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0014",
+    "__EMPTY": "Emotional Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "ee aarQQchiya gaena mata godak dhukayi.",
+    "__EMPTY_3": "ඒ ආරංචිය ගැන මට ගොඩක් දුකයි.",
+    "__EMPTY_4": "ඒ ආරංචිය ගැන මට ගොඩක් දුකයි.",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "• Emotional meaning is preserved correctly",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "• Sinhala output is natural and readable",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "• Grammar and word choice are accurate",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0015",
+    "__EMPTY": "Simple Present Statement",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama vaeda karanavaa",
+    "__EMPTY_3": "මම වැඩ කරනවා",
+    "__EMPTY_4": "මම වැඩ කරනවා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Present tense meaning is preserved",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Correct Sinhala verb form",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Simple and clear sentence",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0016",
+    "__EMPTY": "Simple Question",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "oyaa kohomadha innee?",
+    "__EMPTY_3": "ඔයා කොහොමද ඉන්නේ?",
+    "__EMPTY_4": "ඔයා කොහොමද ඉන්නේ?",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Question structure is correctly interpreted\r\n",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Natural Sinhala output",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Correct word order",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0017",
+    "__EMPTY": "Simple Past Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama gedhara giyaa",
+    "__EMPTY_3": "මම ගෙදර ගියා",
+    "__EMPTY_4": "මම ගෙදර ගියා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Past tense preserved correctly",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Clear sentence meaning",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Correct Sinhala spelling",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0018",
+    "__EMPTY": "Simple Future Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "api heta yanavaa",
+    "__EMPTY_3": "අපි හෙට යනවා",
+    "__EMPTY_4": "අපි හෙට යනවා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Future meaning is preserved",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Sentence structure is correct",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Output is natural",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0019",
+    "__EMPTY": "Polite Request",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mata udhav karanna",
+    "__EMPTY_3": "මට උදව් කරන්න",
+    "__EMPTY_4": "මට උදව් කරන්න",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Request form is correctly handled",
+    "__EMPTY_7": "· Greeting / request / response"
+  },
+  {
+    "__EMPTY_6": "Polite meaning preserved",
+    "__EMPTY_7": "·   imperative sentence"
+  },
+  {
+    "__EMPTY_6": "Correct verb usage",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0020",
+    "__EMPTY": "Simple Negative Sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama adha ennee naehae",
+    "__EMPTY_3": "මම අද එන්නේ නැහැ",
+    "__EMPTY_4": "මම අද එන්නේ නැහැ",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Negation handled correctly",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Sentence meaning preserved",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Correct grammar usage",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0021",
+    "__EMPTY": "Simple Statement with Object",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama potha kiyavanavaa",
+    "__EMPTY_3": "මම පොත කියවනවා",
+    "__EMPTY_4": "මම පොත කියවනවා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Object handling is correct",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Sinhala output is clear",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Meaning preserved",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0022",
+    "__EMPTY": "Medium Length Descriptive Sentence",
+    "__EMPTY_1": "M",
+    "__EMPTY_2": "mama iyee raee gedhara gihin ammaa ekka kathaa kaLaa",
+    "__EMPTY_3": "මම ඉයේ රෑ ගෙදර ගිහින් අම්මා එක්ක කතා කළා",
+    "__EMPTY_4": "මම ඉයේ රෑ ගෙදර ගිහින් අම්මා එක්ක කතා කළා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Sentence flow preserved",
+    "__EMPTY_7": "Formal language usage"
+  },
+  {
+    "__EMPTY_6": "Past tense handled correctly",
+    "__EMPTY_7": " simple sentence"
+  },
+  {
+    "__EMPTY_6": "Meaning remains accurate",
+    "__EMPTY_7": "M (31–299 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0023",
+    "__EMPTY": "Medium Compound Sentence",
+    "__EMPTY_1": "M",
+    "__EMPTY_2": "mama vaeda karalaa passee gedhara aavaa saha viveeka gaththaa",
+    "__EMPTY_3": "මම වැඩ කරලා පස්සේ ගෙදර ආවා සහ විවේක ගත්තා",
+    "__EMPTY_4": "මම වැඩ කරලා පස්සේ ගෙදර ආවා සහ විවේක ගත්තා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Compound structure handled correctly",
+    "__EMPTY_7": "Formal language usage"
+  },
+  {
+    "__EMPTY_6": "Meaning preserved accurately",
+    "__EMPTY_7": "simple / complex sentence"
+  },
+  {
+    "__EMPTY_6": "Sentence flow is natural",
+    "__EMPTY_7": "M (31–299 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Pos_Fun_0024",
+    "__EMPTY": "Simple Location Statement",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama gedhara innee",
+    "__EMPTY_3": "මම ගෙදර ඉන්නේ",
+    "__EMPTY_4": "මම ගෙදර ඉන්නේ",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Present tense is correctly converted",
+    "__EMPTY_7": "Daily language usage"
+  },
+  {
+    "__EMPTY_6": "Sentence meaning is preserved",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Sinhala grammar and structure are correct",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "·   accuracy validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0001",
+    "__EMPTY": "Unsupported symbols",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama #$% bath kanavaa",
+    "__EMPTY_3": "මම  බත් කනවා",
+    "__EMPTY_4": "මම #$% බත් කනවා",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Special characters are not supported",
+    "__EMPTY_7": "Unsupported characters"
+  },
+  {
+    "__EMPTY_6": "Input validation fails for non-language characters",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "Symbols are incorrectly processed in output",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0002",
+    "__EMPTY": "Digits inside words",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama ba7th kanavaa",
+    "__EMPTY_3": "මම බත් කනවා",
+    "__EMPTY_4": "මම බ7ත් කනවා",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Numbers mixed with letters are not supported",
+    "__EMPTY_7": "Unsupported characters"
+  },
+  {
+    "__EMPTY_6": "Invalid input format causes incorrect output",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "System cannot correctly interpret alphanumeric words",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0003",
+    "__EMPTY": "Incomplete/Misspelled Singlish",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama haemadhaama bath kanavasdvsv",
+    "__EMPTY_3": "මම හැමදාම බත් කනව",
+    "__EMPTY_4": "මම හැමදාම බත් කනවස්ඩ්ව්ස්ව්",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Invalid input format causes incorrect output",
+    "__EMPTY_7": "error/validation response"
+  },
+  {
+    "__EMPTY_6": "Missing characters affect correct transliteration",
+    "__EMPTY_7": "Invalid phonetic input"
+  },
+  {
+    "__EMPTY_6": "System fails to identify intended meaning",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0004",
+    "__EMPTY": "Incorrect character",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama haema dhaama bath kanava",
+    "__EMPTY_3": "මම හැමදාම බත් කනවා",
+    "__EMPTY_4": "මම හැම දාම බත් කනව",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Invalid phonetic combinations are used",
+    "__EMPTY_7": "Error handling / input validation"
+  },
+  {
+    "__EMPTY_6": "Output becomes inaccurate due to spelling errors",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "System cannot map incorrect characters properly",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0005",
+    "__EMPTY": "Repeated letters",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama haeemadhaamaa baath kanavaa",
+    "__EMPTY_3": "මම හැමදාම බත් කනවා",
+    "__EMPTY_4": "මම හෑමදාමා බාත් කනවා",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Repeated letters affect phonetic recognition",
+    "__EMPTY_7": "Error handling / input validation"
+  },
+  {
+    "__EMPTY_6": "Informal typing leads to incorrect output",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "System does not normalize extra characters",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0006",
+    "__EMPTY": "No spaces between words",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mamahaemadhaamabathkanavaa",
+    "__EMPTY_3": "මම හැමදාම බත්කනවා",
+    "__EMPTY_4": "මමහැමදාමබත්කනවා",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Words are not separated correctly",
+    "__EMPTY_7": "Word boundary issues"
+  },
+  {
+    "__EMPTY_6": "Translation accuracy is reduced",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "System fails to identify word boundaries",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0007",
+    "__EMPTY": "English only sentence",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "I am going to the shop today",
+    "__EMPTY_3": "English input not supported",
+    "__EMPTY_4": "English input not supported",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "English-only input is not supported",
+    "__EMPTY_7": "Mixed language input"
+  },
+  {
+    "__EMPTY_6": "Translation fails due to language mismatch",
+    "__EMPTY_7": "Rejection of unsupported input language"
+  },
+  {
+    "__EMPTY_6": "System expects Singlish input",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0008",
+    "__EMPTY": "Mixed Sinhala with Singlish",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama අද bath kanavaa",
+    "__EMPTY_3": "මම අද බත් කනවා",
+    "__EMPTY_4": "Sinhala characters are not allowed in Singlish input.",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "System expects Singlish input",
+    "__EMPTY_7": "Mixed language input"
+  },
+  {
+    "__EMPTY_6": "Sinhala characters are invalid in Singlish input",
+    "__EMPTY_7": "Validation of unsupported Unicode characters"
+  },
+  {
+    "__EMPTY_6": "System correctly rejects mixed input",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0009",
+    "__EMPTY": "Very long input",
+    "__EMPTY_1": "M",
+    "__EMPTY_2": "mama me kaalaya thula godak dewal gena hithanawa saha meka liyanna patan gaththaa nisaa system eka hariyata wada karanneyda kiyala balanna oonee",
+    "__EMPTY_3": "මම මේ කාලය තුළ ගොඩක් දේවල් ගැන සිතාගෙන මේක ලියන්න පටන් ගත්ත නිසා, පද්ධතිය හරි ලෙස ක්‍රියා කරනවාද කියලා පරීක්ෂා කර බලන්න ඕනේ.",
+    "__EMPTY_4": "මම මෙ කාලය තුල ගොඩක් ඩෙwඅල් ගෙන හිතනwඅ සහ මෙක ලියන්න පටන් ගත්තා නිසා system එක හරියට wඅඩ කරන්නෙය්ඩ කියල බලන්න ඕනේ",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Long input affects system processing accuracy",
+    "__EMPTY_7": "Performance under long input"
+  },
+  {
+    "__EMPTY_6": "Output becomes partially incorrect",
+    "__EMPTY_7": "Complex sentence"
+  },
+  {
+    "__EMPTY_6": "System is not optimized for lengthy sentences",
+    "__EMPTY_7": "M (31–299 characters) "
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Neg_Fun_0010",
+    "__EMPTY": "Invalid phonetic pattern",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "mama krupthi bath kanavaa",
+    "__EMPTY_3": "මම බත් කනවා",
+    "__EMPTY_4": "මම ක්‍රුප්ති බත් කනවා",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "Input has no valid phonetic meaning",
+    "__EMPTY_7": "Error handling / input validation"
+  },
+  {
+    "__EMPTY_6": " System cannot determine correct translation",
+    "__EMPTY_7": "Error behavior for invalid linguistic input"
+  },
+  {
+    "__EMPTY_6": "Output is invalid due to meaningless text",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_7": "Robustness validation"
+  },
+  {
+    "Note: ": "Pos_UI_0001",
+    "__EMPTY": "Valid text input and successful translation",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "man gedhara yanavaa",
+    "__EMPTY_3": "මන් ගෙදර යනවා",
+    "__EMPTY_4": "මන් ගෙදර යනවා",
+    "__EMPTY_5": "Pass",
+    "__EMPTY_6": "Sinhala output appears in real-time without clicking any button",
+    "__EMPTY_7": "Formatting / UI behavior"
+  },
+  {
+    "__EMPTY_6": "Output updates correctly as the user types",
+    "__EMPTY_7": "Simple sentence"
+  },
+  {
+    "__EMPTY_6": "No UI delay or freezing observed",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_6": "Correct Sinhala characters are rendered instantly",
+    "__EMPTY_7": "Real-time output update behavior"
+  },
+  {
+    "Note: ": "Neg_UI_0001",
+    "__EMPTY": "Clear input does not reset output",
+    "__EMPTY_1": "S",
+    "__EMPTY_2": "man gedhara yanavaa",
+    "__EMPTY_3": "Sinhala output should be cleared when input is removed",
+    "__EMPTY_4": "Sinhala output remains displayed after input is cleared",
+    "__EMPTY_5": "Fail",
+    "__EMPTY_6": "• Output is not cleared when input field is emptied",
+    "__EMPTY_7": "Empty / cleared input handling"
+  },
+  {
+    "__EMPTY_6": "• UI does not reset translation state properly",
+    "__EMPTY_7": "UI behavior validation"
+  },
+  {
+    "__EMPTY_6": "• Causes user confusion",
+    "__EMPTY_7": "S (≤30 characters)"
+  },
+  {
+    "__EMPTY_6": "• Indicates missing input–output synchronization",
+    "__EMPTY_7": "Error handling / input validation"
+  }
+]

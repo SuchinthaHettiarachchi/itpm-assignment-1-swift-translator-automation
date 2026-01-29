@@ -1,0 +1,356 @@
+[
+  {
+    "id": "Pos_Fun_0001",
+    "type": "pos",
+    "input": "mama haemadhaama bath kanavaa",
+    "expected": "මම හැමදාම බත් කනවා",
+    "keywords": [
+      "මම",
+      "හැමදාම",
+      "බත්",
+      "කනවා"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0002",
+    "type": "pos",
+    "input": "Oyage nama mokakdha?",
+    "expected": "ඔයගෙ නම මොකක්ද?",
+    "keywords": [
+      "ඔයගෙ",
+      "නම",
+      "මොකක්ද"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0003",
+    "type": "pos",
+    "input": "vaadi venna.",
+    "expected": "වාඩි වෙන්න.",
+    "keywords": [
+      "වාඩි",
+      "වෙන්න"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0004",
+    "type": "pos",
+    "input": "Mama labana sathiye Mahanuvara yanavaa.",
+    "expected": "මම ලබන සතියෙ මහනුවර යනවා.",
+    "keywords": [
+      "මම",
+      "ලබන",
+      "සතියෙ",
+      "මහනුවර"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0005",
+    "type": "pos",
+    "input": "Mama iyee chithrapatayak baluvaa.",
+    "expected": "මම ඉයේ චිත්‍රපටයක් බලුවා.",
+    "keywords": [
+      "මම",
+      "ඉයේ",
+      "චිත්",
+      "රපටයක්"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0006",
+    "type": "pos",
+    "input": "iiyee udhee mama idhiriyee ena nivaadu uthsavaya saDHAhaa aluth eLavaLu saha palathuru miladhii gaeniimata koLaBA praDhaana veLaDHApoLata giya avasThaaveedhii, mata vasara dhahayakata vaedi kaalayakin dhaeka nothibuu magee paasal kaalayee paeraNi mithureku ahamben muNagaesuNaa.",
+    "expected": "ඊයේ උදේ මම ඉදිරියේ එන නිවාඩු උත්සවය සඳහා අලුත් එළවළු සහ පලතුරු මිලදී ගැනීමට කොළඹ ප්‍රධාන වෙළඳපොළට ගිය අවස්ථාවේදී, මට වසර දහයකට වැඩි කාලයකින් දැක නොතිබූ මගේ පාසල් කාලයේ පැරණි මිතුරෙකු අහම්බෙන් මුණගැසුණා.",
+    "keywords": [
+      "ඊයේ",
+      "උදේ",
+      "මම",
+      "ඉදිරියේ"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0007",
+    "type": "pos",
+    "input": "karuNaakara layit nivanna.",
+    "expected": "කරුණාකර ලයිට් නිවන්න.",
+    "keywords": [
+      "කරුණාකර",
+      "ලයිට්",
+      "නිවන්න"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0008",
+    "type": "pos",
+    "input": "mama kadeeta gihin kiri gaththaa.",
+    "expected": "මම කඩේට ගිහින් කිරි ගත්තා.",
+    "keywords": [
+      "මම",
+      "කඩේට",
+      "ගිහින්",
+      "කිරි"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0009",
+    "type": "pos",
+    "input": "adha udhaeesana nuvaraeLiya maDhYAma kaDHAukarayee Ghana thee vathu maedhin aevidha yana vita, muLu nimnaya puraa hamaa giya aDhika miidhuma saha siithala suLaGA maDhYAyee vuvadha, ithaa veegayen thee dhaLu neLana vehesa mahansi vii vaeda karana vathu kamkaruvan mama niriikShaNaya kaLemi.",
+    "expected": "අද උදෑසන නුවරඑළිය මධ්‍යම කඳුකරයේ ඝන තේ වතු මැදින් ඇවිද යන විට, මුළු නිම්නය පුරා හමා ගිය අධික මීදුම සහ සීතල සුළඟ මධ්‍යයේ වුවද, ඉතා වේගයෙන් තේ දළු නෙළන වෙහෙස මහන්සි වී වැඩ කරන වතු කම්කරුවන් මම නිරීක්ෂණය කළෙමි.",
+    "keywords": [
+      "අද",
+      "උදෑසන",
+      "නුවරඑළිය",
+      "මධ්"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0010",
+    "type": "pos",
+    "input": "obata obagee dhigukaaliina vRUththiiya ilakka sapuraa gaeniimata saha mema tharaGAkaarii karmaanthayee saarThaka naayakayeku viimata avashYA nam, oba obee thaakShaNika kusalathaa varDhanaya kara gaeniimata menma oba samaGA dhinapathaa vaeda karana pudhgalayin samaGA shakthimath vRUththiiya sabaDHAthaa godanaGAaa gaeniimatadha avaDhaanaya yomu kaLa yuthuya.",
+    "expected": "ඔබට ඔබගේ දිගුකාලීන වෘත්තීය ඉලක්ක සපුරා ගැනීමට සහ මෙම තරඟකාරී කර්මාන්තයේ සාර්ථක නායකයෙකු වීමට අවශ්‍ය නම්, ඔබ ඔබේ තාක්ෂණික කුසලතා වර්ධනය කර ගැනීමට මෙන්ම ඔබ සමඟ දිනපතා වැඩ කරන පුද්ගලයින් සමඟ ශක්තිමත් වෘත්තීය සබඳතා ගොඩනඟා ගැනීමටද අවධානය යොමු කළ යුතුය.",
+    "keywords": [
+      "ඔබට",
+      "ඔබගේ",
+      "දිගුකාලීන",
+      "වෘත්තීය"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0011",
+    "type": "pos",
+    "input": "mama mas kannee naehae.",
+    "expected": "මම මස් කන්නේ නැහැ.",
+    "keywords": [
+      "මම",
+      "මස්",
+      "කන්නේ",
+      "නැහැ"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0012",
+    "type": "pos",
+    "input": "adhaaLa panathee viDhiviDhaana prakaarava amaathYAvarayaa vetha paevarii aethi balathalavalata anukuulava saha siyaluma paLaath puraa athYAvashYA seevaavan pavathvaagena yana atharathura mahajana aarakShaava thahavuru kiriimee avashYAthaavaya saelakillata ganimin, prakaashayata path karana ladha hadhisi avasThaa kaalasiimaava thuLa balayalath nilaDhaariyekugee raajakaariyata hithaamathaama baaDhaa karana, avahira karana hoo maedhihath vana, eseeth naethinam nikuth karana ladha niyooga piLipaedhiimata apohosath vana oonaeema pudhgalayeku ovungee samaaja thaththvaya hoo vRUththiiya anubadhDhathaavaya nosalakaa maheesthraathvarayeku idhiriyee pavathvanu labana sQQkShiptha nadu viBhaagayakata yatath viya yuthu athara, ehidhii varadhakaru karanu laebuu vita, vasara pahakata novaedi kaalayak saDHAhaa barapathala vaeda sahitha banDhanaagaaragatha kiriimakata hoo aDhikaraNa balaDhaariyaa visin thiiraNaya karanu labana saelakiya yuthu dhadayakata hoo ema dhaDAuvam dhekatama yatath viya haeki bava meyin niyama karanu labana athara, jaathika aarakShaava saha niithiyee aaDhipathYAya suraekiima saDHAhaa evaeni ayithivaasikam niithYaanukuulava siimaa kara aethi avasThaavakadhii haera, mema vaganthiyee adQQgu kisivak aaNdukrama vYAvasThaava magin sahathika kara aethi puravaesiyekugee muulika ayithivaasikam siimaa kiriimak lesa arTha niruupaNaya nokaLa yuthuya.",
+    "expected": "අදාළ පනතේ විධිවිධාන ප්‍රකාරව අමාත්‍යවරයා වෙත පැවරී ඇති බලතලවලට අනුකූලව සහ සියලුම පළාත් පුරා අත්‍යවශ්‍ය සේවාවන් පවත්වාගෙන යන අතරතුර මහජන ආරක්ෂාව තහවුරු කිරීමේ අවශ්‍යතාවය සැලකිල්ලට ගනිමින්, ප්‍රකාශයට පත් කරන ලද හදිසි අවස්ථා කාලසීමාව තුළ බලයලත් නිලධාරියෙකුගේ රාජකාරියට හිතාමතාම බාධා කරන, අවහිර කරන හෝ මැදිහත් වන, එසේත් නැතිනම් නිකුත් කරන ලද නියෝග පිළිපැදීමට අපොහොසත් වන ඕනෑම පුද්ගලයෙකු ඔවුන්ගේ සමාජ තත්ත්වය හෝ වෘත්තීය අනුබද්ධතාවය නොසලකා මහේස්ත්‍රාත්වරයෙකු ඉදිරියේ පවත්වනු ලබන සංක්ෂිප්ත නඩු විභාගයකට යටත් විය යුතු අතර, එහිදී වරදකරු කරනු ලැබූ විට, වසර පහකට නොවැඩි කාලයක් සඳහා බරපතල වැඩ සහිත බන්ධනාගාරගත කිරීමකට හෝ අධිකරණ බලධාරියා විසින් තීරණය කරනු ලබන සැලකිය යුතු දඩයකට හෝ එම දඬෞවම් දෙකටම යටත් විය හැකි බව මෙයින් නියම කරනු ලබන අතර, ජාතික ආරක්ෂාව සහ නීතියේ ආධිපත්‍යය සුරැකීම සඳහා එවැනි අයිතිවාසිකම් නීත්‍යානුකූලව සීමා කර ඇති අවස්ථාවකදී හැර, මෙම වගන්තියේ අඩංගු කිසිවක් ආණ්ඩුක්‍රම ව්‍යවස්ථාව මගින් සහතික කර ඇති පුරවැසියෙකුගේ මූලික අයිතිවාසිකම් සීමා කිරීමක් ලෙස අර්ථ නිරූපණය නොකළ යුතුය.",
+    "keywords": [
+      "අදාළ",
+      "පනතේ",
+      "විධිවිධාන",
+      "ප්"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0013",
+    "type": "pos",
+    "input": "mama heta ennee naehae.",
+    "expected": "මම හෙට එන්නේ නැහැ.",
+    "keywords": [
+      "මම",
+      "හෙට",
+      "එන්නේ",
+      "නැහැ"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0014",
+    "type": "pos",
+    "input": "ee aarQQchiya gaena mata godak dhukayi.",
+    "expected": "ඒ ආරංචිය ගැන මට ගොඩක් දුකයි.",
+    "keywords": [
+      "ඒ",
+      "ආරංචිය",
+      "ගැන",
+      "මට"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0015",
+    "type": "pos",
+    "input": "mama vaeda karanavaa",
+    "expected": "මම වැඩ කරනවා",
+    "keywords": [
+      "මම",
+      "වැඩ",
+      "කරනවා"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0016",
+    "type": "pos",
+    "input": "oyaa kohomadha innee?",
+    "expected": "ඔයා කොහොමද ඉන්නේ?",
+    "keywords": [
+      "ඔයා",
+      "කොහොමද",
+      "ඉන්නේ"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0017",
+    "type": "pos",
+    "input": "mama gedhara giyaa",
+    "expected": "මම ගෙදර ගියා",
+    "keywords": [
+      "මම",
+      "ගෙදර",
+      "ගියා"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0018",
+    "type": "pos",
+    "input": "api heta yanavaa",
+    "expected": "අපි හෙට යනවා",
+    "keywords": [
+      "අපි",
+      "හෙට",
+      "යනවා"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0019",
+    "type": "pos",
+    "input": "mata udhav karanna",
+    "expected": "මට උදව් කරන්න",
+    "keywords": [
+      "මට",
+      "උදව්",
+      "කරන්න"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0020",
+    "type": "pos",
+    "input": "mama adha ennee naehae",
+    "expected": "මම අද එන්නේ නැහැ",
+    "keywords": [
+      "මම",
+      "අද",
+      "එන්නේ",
+      "නැහැ"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0021",
+    "type": "pos",
+    "input": "mama potha kiyavanavaa",
+    "expected": "මම පොත කියවනවා",
+    "keywords": [
+      "මම",
+      "පොත",
+      "කියවනවා"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0022",
+    "type": "pos",
+    "input": "mama iyee raee gedhara gihin ammaa ekka kathaa kaLaa",
+    "expected": "මම ඉයේ රෑ ගෙදර ගිහින් අම්මා එක්ක කතා කළා",
+    "keywords": [
+      "මම",
+      "ඉයේ",
+      "රෑ",
+      "ගෙදර"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0023",
+    "type": "pos",
+    "input": "mama vaeda karalaa passee gedhara aavaa saha viveeka gaththaa",
+    "expected": "මම වැඩ කරලා පස්සේ ගෙදර ආවා සහ විවේක ගත්තා",
+    "keywords": [
+      "මම",
+      "වැඩ",
+      "කරලා",
+      "පස්සේ"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0024",
+    "type": "pos",
+    "input": "mama gedhara innee",
+    "expected": "මම ගෙදර ඉන්නේ",
+    "keywords": [
+      "මම",
+      "ගෙදර",
+      "ඉන්නේ"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0001",
+    "type": "neg",
+    "input": "mama #$% bath kanavaa",
+    "expected": "මම  බත් කනවා"
+  },
+  {
+    "id": "Neg_Fun_0002",
+    "type": "neg",
+    "input": "mama ba7th kanavaa",
+    "expected": "මම බත් කනවා"
+  },
+  {
+    "id": "Neg_Fun_0003",
+    "type": "neg",
+    "input": "mama haemadhaama bath kanavasdvsv",
+    "expected": "මම හැමදාම බත් කනව"
+  },
+  {
+    "id": "Neg_Fun_0004",
+    "type": "neg",
+    "input": "mama haema dhaama bath kanava",
+    "expected": "මම හැමදාම බත් කනවා"
+  },
+  {
+    "id": "Neg_Fun_0005",
+    "type": "neg",
+    "input": "mama haeemadhaamaa baath kanavaa",
+    "expected": "මම හැමදාම බත් කනවා"
+  },
+  {
+    "id": "Neg_Fun_0006",
+    "type": "neg",
+    "input": "mamahaemadhaamabathkanavaa",
+    "expected": "මම හැමදාම බත්කනවා"
+  },
+  {
+    "id": "Neg_Fun_0007",
+    "type": "neg",
+    "input": "I am going to the shop today",
+    "expected": "English input not supported"
+  },
+  {
+    "id": "Neg_Fun_0008",
+    "type": "neg",
+    "input": "mama අද bath kanavaa",
+    "expected": "මම අද බත් කනවා"
+  },
+  {
+    "id": "Neg_Fun_0009",
+    "type": "neg",
+    "input": "mama me kaalaya thula godak dewal gena hithanawa saha meka liyanna patan gaththaa nisaa system eka hariyata wada karanneyda kiyala balanna oonee",
+    "expected": "මම මේ කාලය තුළ ගොඩක් දේවල් ගැන සිතාගෙන මේක ලියන්න පටන් ගත්ත නිසා, පද්ධතිය හරි ලෙස ක්‍රියා කරනවාද කියලා පරීක්ෂා කර බලන්න ඕනේ."
+  },
+  {
+    "id": "Neg_Fun_0010",
+    "type": "neg",
+    "input": "mama krupthi bath kanavaa",
+    "expected": "මම බත් කනවා"
+  },
+  {
+    "id": "Pos_UI_0001",
+    "type": "pos",
+    "input": "man gedhara yanavaa",
+    "expected": "මන් ගෙදර යනවා",
+    "keywords": [
+      "මන්",
+      "ගෙදර",
+      "යනවා"
+    ]
+  },
+  {
+    "id": "Neg_UI_0001",
+    "type": "neg",
+    "input": "man gedhara yanavaa",
+    "expected": "Sinhala output should be cleared when input is removed"
+  }
+]
