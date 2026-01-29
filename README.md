@@ -1,32 +1,13 @@
 # Swift Translator Test Automation
 
-## Project Overview
-Automated testing suite for [Swift Translator](https://www.swifttranslator.com/) - a Singlish to Sinhala text converter. This project uses Playwright to validate the accuracy and robustness of the translation system across various input scenarios.
-
 ## Student Information
 - **Registration Number:** IT23432734
 - **Course:** IT3040 - ITPM
 - **Assignment:** Assignment 1 - Semester 1
 
-## Test Coverage Summary
-- **24 Positive Functional Tests** (Pos_Fun_0001 to Pos_Fun_0024)
-- **10 Negative Functional Tests** (Neg_Fun_0001 to Neg_Fun_0010)
-- **1 Positive UI Test** (Pos_UI_0001)
-- **1 Negative UI Test** (Neg_UI_0001)
-- **Total: 36 Test Cases**
+## Project Overview
+Automated testing suite for [Swift Translator](https://www.swifttranslator.com/) - a Singlish to Sinhala text converter. 
 
-### Test Scenarios Include:
-- Sentence structures (simple, compound, complex)
-- Tense variations (past, present, future)
-- Interrogative and imperative forms
-- Positive and negative sentences
-- Input length variations (short ≤30, medium 31-299, long ≥300 characters)
-- Mixed Singlish + English content
-- Typographical error handling
-- Special characters and formatting
-- Real-time UI behavior validation
-
-## Prerequisites
 - **Node.js** (v14 or higher)
 - **npm** (Node Package Manager)
 
@@ -167,7 +148,7 @@ Edit `test-data.json` to include only desired test cases, or modify the test fil
 npx playwright codegen https://www.swifttranslator.com/
 ```
 
-## Notes
+## Notes/Issues
 - Tests interact with the live Swift Translator website
 - Some tests may fail if the website is down or experiencing issues
 - Translation accuracy depends on the current state of the Swift Translator system
