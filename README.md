@@ -3,7 +3,7 @@
 ## Student Information
 - **Registration Number:** IT23432734
 - **Course:** IT3040 - ITPM
-- **Assignment:** Assignment 1 - Semester 1
+- **Assignment:** Assignment 1 - Semester 2
 
 ## Project Overview
 Automated testing suite for [Swift Translator](https://www.swifttranslator.com/) - a Singlish to Sinhala text converter. 
