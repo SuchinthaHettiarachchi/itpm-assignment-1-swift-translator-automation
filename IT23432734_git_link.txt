@@ -4,4 +4,4 @@ https://github.com/SuchinthaHettiarachchi/itpm-assignment-1-swift-translator-aut
 Repository Name: itpm-assignment-1-swift-translator-automation
 Student Registration Number: IT23432734
 Course: IT3040 - ITPM
-Assignment: Assignment 1 - Semester 1
+Assignment: Assignment 1 - Semester 2
